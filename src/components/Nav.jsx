@@ -10,44 +10,44 @@ import twiter from "../assets/imgs/png/twiter_icon.png";
 function Nav() {
   return (
     <>
-      <nav className=" py-4 position-relative z-2">
-        <Container>
-          <div className=" w-100 d-flex justify-content-between">
+      <nav className="py-4 position-relative z-2">
+        <Container className="container_custom">
+          <div className="w-100 d-flex justify-content-between">
             <div>
               <img className="w_50" src={logo} alt="logo" />
             </div>
-            <div className=" d-flex align-items-center gap-3 ">
+            <div className="d-flex align-items-center gap-3">
               <a href="#">
                 <img
-                  className=" icon_width icon_hover "
+                  className="icon_width icon_hover"
                   src={insta}
                   alt="insta"
                 />
               </a>
               <a href="#">
                 <img
-                  className=" icon_width icon_hover "
+                  className="icon_width icon_hover"
                   src={discord}
                   alt="discord"
                 />
               </a>
               <a href="#">
                 <img
-                  className=" icon_width icon_hover "
+                  className="icon_width icon_hover"
                   src={linkdin}
                   alt="linkdin"
                 />
               </a>
               <a href="#">
                 <img
-                  className=" icon_width icon_hover "
+                  className="icon_width icon_hover"
                   src={youtube}
                   alt="youtube"
                 />
               </a>
               <a href="#">
                 <img
-                  className=" icon_width icon_hover "
+                  className="icon_width icon_hover"
                   src={twiter}
                   alt="twiter"
                 />

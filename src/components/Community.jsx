@@ -32,48 +32,50 @@ function Community() {
 
   return (
     <>
-      <section className=" py-5">
-        <Container>
-          <Row className=" align-items-center">
-            <Col lg={6} className="mb-5 mb-lg-0 position-relative">
-              <span className="orange_shadow position-absolute top-0 start-0 d-none d-lg-flex "></span>
-
-              <div class="cards-box w_70 ms-sm-5 ms-lg-0">
+      <section className="py-5">
+        <Container className="container_custom">
+          <Row className="align-items-center">
+            <Col
+              lg={6}
+              className="mb-5 mb-lg-0 ps-sm-5 ps-xl-0 position-relative"
+            >
+              <span className="orange_shadow position-absolute top-0 start-0 d-none d-lg-flex"></span>
+              <div class="cards-box w_70 ps-5  ms-sm-5 ms-lg-0">
                 <div class="card hide">
                   <div class="content-placeholder">
-                    <img className=" w-100" src={card} alt="card" />
+                    <img className="w-100" src={card} alt="card" />
                   </div>
                 </div>
                 <div class="card">
                   <div class="content-placeholder">
-                    <img className=" w-100" src={card} alt="card" />
+                    <img className="w-100" src={card} alt="card" />
                   </div>
                 </div>
                 <div class="card">
                   <div class="content-placeholder">
-                    <img className=" w-100" src={card_2} alt="card" />
+                    <img className="w-100" src={card_2} alt="card" />
                   </div>
                 </div>
                 <div class="card">
                   <div class="content-placeholder">
-                    <img className=" w-100" src={card} alt="card" />
+                    <img className="w-100" src={card} alt="card" />
                   </div>
                 </div>
                 <div class="card">
                   <div class="content-placeholder">
-                    <img className=" w-100" src={card_2} alt="card" />
+                    <img className="w-100" src={card_2} alt="card" />
                   </div>
                 </div>
               </div>
             </Col>
-            <Col lg={6}>
-              <p className=" mb-0 text-white ff_lato fw-bold fs_sm">
+            <Col className="pt-5 pt-lg-0" lg={6}>
+              <p className="mb-0 text-white ff_lato fw-bold fs_sm">
                 Our Community
               </p>
-              <p className=" ff_syne fw_800 fs_md text-white mx_560">
+              <h2 className="ff_syne fw_800 fs_md text-white mx_560">
                 Friends of the Metaverse Founding Member NFT
-              </p>
-              <p className=" ff_lato fw-semibold  text_color fs_xsm  mx_750 mb-2">
+              </h2>
+              <p className="ff_lato fw-semibold  text_color fs_xsm  mx_750 mb-2">
                 Bringing our vision to life, the first Friends of the Metaverse
                 Founding Member NFT collection will be used to spark innovation,
                 inspiration and motivation for the entire collective. The
@@ -83,18 +85,18 @@ function Community() {
                 and perseverance, this NFT depicts what it means to be a tech
                 leader.
               </p>
-              <p className=" ff_lato fw-semibold  text_color fs_xsm  mx_750 mb-2">
+              <p className="ff_lato fw-semibold  text_color fs_xsm  mx_750 mb-2">
                 Holders of the Friends of the Metaverse Founding Member NFT will
                 receive all benefits within the Friends of the Metaverse
                 community, including access to its private group of 1,000 NFT
                 collectors and priority access to its upcoming 10k collection.
               </p>
-              <a
+              <button
                 href="#"
-                className=" main_btn ff_lato fw_800 mt-4 d-inline-block fs_xsm text-decoration-none"
+                className="main_btn ff_lato fw_800 mt-4 d-inline-block fs_xsm text-decoration-none"
               >
                 BUY ON OPENSEA
-              </a>
+              </button>
             </Col>
           </Row>
         </Container>

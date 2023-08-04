@@ -8,6 +8,12 @@
 body {
   background: #040515 !important  ;
 }
+button {
+  border: none !important;
+}
+.container_custom {
+  max-width: 1140px !important;
+}
 .bg_img {
   background-image: url(../src/assets/imgs/png/bg_header.png);
   background-position: center;
@@ -27,6 +33,9 @@ body {
 .mx_760 {
   max-width: 760px !important;
 }
+.mx_946 {
+  max-width: 946px !important;
+}
 .linear_box {
   border-radius: 10px;
   background: linear-gradient(133deg, #7b61ff 0%, #eb568b 48.28%, #f37221 100%);
@@ -42,8 +51,34 @@ body {
   border-radius: 10px;
   border: 1px solid var(--white-100, rgba(255, 255, 255, 0.1));
   background: var(--white-50, rgba(255, 255, 255, 0.05));
-
   padding: 22px 14px 17px 13px;
+}
+.card_friends p {
+  transition: all ease-in-out 300ms;
+}
+.card_friends:hover p {
+  color: white !important;
+  transition: all ease-in-out 300ms;
+}
+.card_friends:hover img {
+  animation-name: hover_img !important;
+  animation-duration: 4s !important;
+  animation-iteration-count: infinite !important;
+  animation-direction: reverse !important;
+  animation-timing-function: linear !important;
+}
+
+@keyframes hover_img {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  45% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }
 
 /*timeline*/
@@ -144,7 +179,7 @@ body {
   flex-wrap: nowrap !important;
 }
 .bg_linear {
-  background: linear-gradient(180deg, #050616 50%, #080a23 50%) !important;
+  background: linear-gradient(180deg, #040515 50%, #080a23 50%) !important;
 }
 .footer_logo_size {
   width: 200px;
@@ -450,6 +485,38 @@ body {
   .footer_logo_size {
     width: 286px;
   }
+  .cards-box .card:not(.hide)[data-slide="0"] {
+    transform: scale(1) rotate(0deg);
+    z-index: 6;
+  }
+  .cards-box .card:not(.hide)[data-slide="1"] {
+    transform: scale(0.975) rotate(0deg) translateY(20px);
+    z-index: 5;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="2"] {
+    transform: scale(0.95) rotate(0deg) translateY(40px);
+    z-index: 4;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="3"] {
+    transform: scale(0.925);
+    z-index: 3;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="4"] {
+    transform: scale(0.9);
+    z-index: 2;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="5"] {
+    transform: scale(0.875);
+    z-index: 1;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="0"] {
+    transition: all 0.32s cubic-bezier(0.18, 0.98, 0.45, 1);
+  }
 }
 @media (min-width: 1140px) {
   .w_planet_img {
@@ -459,6 +526,38 @@ body {
 @media (min-width: 1300px) {
   .w_planet_img {
     width: 950px;
+  }
+  .cards-box .card:not(.hide)[data-slide="0"] {
+    transform: scale(1) rotate(0deg);
+    z-index: 6;
+  }
+  .cards-box .card:not(.hide)[data-slide="1"] {
+    transform: scale(0.975) rotate(8deg);
+    z-index: 5;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="2"] {
+    transform: scale(0.95) rotate(18deg);
+    z-index: 4;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="3"] {
+    transform: scale(0.925);
+    z-index: 3;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="4"] {
+    transform: scale(0.9);
+    z-index: 2;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="5"] {
+    transform: scale(0.875);
+    z-index: 1;
+  }
+
+  .cards-box .card:not(.hide)[data-slide="0"] {
+    transition: all 0.32s cubic-bezier(0.18, 0.98, 0.45, 1);
   }
 }
 
@@ -500,11 +599,8 @@ body {
   width: 450px;
   transition: all 0.4s ease-in-out;
   z-index: 14;
-  box-shadow: 7px 6px 15px 0px rgba(0, 0, 0, 0.25);
 }
-.timeline ul li .content * {
-  color: #fff;
-}
+
 /* ***************** non vosible elements ***************** */
 .timeline ul li .content.non-focus::before {
   display: none;
@@ -529,14 +625,14 @@ body {
   height: 5px;
 }
 .timeline ul li:nth-child(odd) .content {
-  left: 50px;
+  left: 38px;
   border-radius: 0px 4px 4px 4px;
 }
 .timeline ul li:nth-child(odd) .content:before {
   left: -38px;
 }
 .timeline ul li:nth-child(even) .content {
-  left: 50px;
+  left: 38px;
   border-radius: 0px 4px 4px 4px;
 }
 .timeline ul li:nth-child(even) .content:before {
@@ -556,10 +652,6 @@ body {
    ----- Media Queries ----- 
    ------------------------- */
 @media screen and (max-width: 1020px) {
-  .timeline ul li .content {
-    width: 41vw;
-  }
-
   .timeline ul li:nth-child(even) .content {
     left: 44px;
   }
