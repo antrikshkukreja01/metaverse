@@ -12,11 +12,15 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Melodies from "./components/Melodies";
 import shadow_bottom from "../src/assets/imgs/png/header_shadow.png";
+import Preloader from "./components/Preloder";
+import Backtotop from "./components/BackToTop";
 
 function App() {
   return (
     <>
       <div className=" overflow-hidden">
+        <Preloader />
+        <Backtotop />
         <div className="bg_img position-relative   ">
           <span className=" position-absolute bottom-0">
             <img className=" w-100" src={shadow_bottom} alt="shadow_bottom" />
